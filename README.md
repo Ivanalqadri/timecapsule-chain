@@ -27,7 +27,7 @@ Messages stay encrypted until the specified unlock date.
 
 ## Installation
 
-```bash
+' bash
 git clone https://github.com/Ivanalqadri/timecapsule-chain
 cd timecapsule-chain
 pip install -r requirements.txt
