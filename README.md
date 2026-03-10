@@ -27,9 +27,26 @@ Messages stay encrypted until the specified unlock date.
 
 ## Installation
 
-'''bash
+```bash
 git clone https://github.com/Ivanalqadri/timecapsule-chain
 cd timecapsule-chain
 pip install -r requirements.txt
+```
 
+# Create Capsule 
+```
+python examples/create_capsule.py
+```
 
+# Run Unlock Daemon
+```
+phyton main.py
+```
+
+# Security
+All messages are encrypted using AES-256 before storage.
+
+No plaintext is stored.
+
+# License
+MIT
