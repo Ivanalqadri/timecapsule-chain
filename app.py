@@ -22,7 +22,13 @@ def create_capsule(message: str, unlock_date: str):
 
     save_capsule(capsule)
 
-    # upload ke shelby storage
+    # upload capsule ke Shelby storage
     subprocess.run(["shelby", "upload", "vault/capsules.json"])
 
-    return {"status": "capsule created"}
+    return {"status": "capsule stored and uploaded to shelby"}
+
+@app.get("/capsules")
+def list_capsules():
+    from capsule.storage import load_capsules
+    return load_capsules()
+    
