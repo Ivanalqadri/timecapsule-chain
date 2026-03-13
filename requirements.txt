@@ -1,3 +1,5 @@
 cryptography
 schedule
 python-dateutil
+fastapi
+uvicorn
